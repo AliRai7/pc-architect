@@ -16,7 +16,7 @@ import { PSUComponent } from './components/PSU';
 
 export function PCModel() {
   const groupRef = useRef<Group>(null);
-  const { scrollProgress } = useScrollProgress();
+  const { progress: scrollProgress } = useScrollProgress();
   const { 
     setExplosionProgress, 
     selectedComponent,
