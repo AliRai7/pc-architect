@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Cpu, Github, Twitter, Menu, X } from 'lucide-react';
+import { Cpu, Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { usePCStore } from '@/store/usePCStore';
 import { cn } from '@/lib/utils';
