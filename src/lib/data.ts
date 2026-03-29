@@ -1,0 +1,153 @@
+import { PCComponent } from '@/types';
+import { Vector3 } from 'three';
+
+export const pcComponentsData: PCComponent[] = [
+  {
+    id: 'gpu',
+    name: 'NVIDIA RTX 4090',
+    description: 'The ultimate gaming and creation graphics card with unprecedented performance.',
+    specs: [
+      { label: 'Memory', value: '24GB GDDR6X' },
+      { label: 'CUDA Cores', value: '16,384' },
+      { label: 'Boost Clock', value: '2.52 GHz' },
+      { label: 'Performance', value: '4K Ultra' },
+      { label: 'Power', value: '450W TDP' },
+    ],
+    explosionDirection: new Vector3(2.5, 0, 0),
+    position: new Vector3(0, -0.3, 0.2),
+    color: '#1a1a1a',
+  },
+  {
+    id: 'cpu',
+    name: 'Intel Core i9-14900K',
+    description: 'Desktop processor with extreme performance for gaming and creating.',
+    specs: [
+      { label: 'Cores', value: '24 (8P + 16E)' },
+      { label: 'Threads', value: '32' },
+      { label: 'Max Turbo', value: '6.0 GHz' },
+      { label: 'Cache', value: '36MB L3' },
+      { label: 'TDP', value: '125W' },
+    ],
+    explosionDirection: new Vector3(0, 1.5, 0.5),
+    position: new Vector3(0, 0.2, 0.1),
+    color: '#2a2a2a',
+  },
+  {
+    id: 'ram1',
+    name: 'DDR5-7200 RGB',
+    description: 'High-performance memory module with RGB lighting.',
+    specs: [
+      { label: 'Capacity', value: '32GB (2x16GB)' },
+      { label: 'Speed', value: '7200 MT/s' },
+      { label: 'Latency', value: 'CL34' },
+      { label: 'Voltage', value: '1.45V' },
+    ],
+    explosionDirection: new Vector3(0, 1.2, 0),
+    position: new Vector3(-0.3, 0.1, 0),
+    color: '#1a1a1a',
+  },
+  {
+    id: 'ram2',
+    name: 'DDR5-7200 RGB',
+    description: 'High-performance memory module with RGB lighting.',
+    specs: [
+      { label: 'Capacity', value: '32GB (2x16GB)' },
+      { label: 'Speed', value: '7200 MT/s' },
+      { label: 'Latency', value: 'CL34' },
+      { label: 'Voltage', value: '1.45V' },
+    ],
+    explosionDirection: new Vector3(0, 1.2, 0),
+    position: new Vector3(-0.1, 0.1, 0),
+    color: '#1a1a1a',
+  },
+  {
+    id: 'ram3',
+    name: 'DDR5-7200 RGB',
+    description: 'High-performance memory module with RGB lighting.',
+    specs: [
+      { label: 'Capacity', value: '32GB (2x16GB)' },
+      { label: 'Speed', value: '7200 MT/s' },
+      { label: 'Latency', value: 'CL34' },
+      { label: 'Voltage', value: '1.45V' },
+    ],
+    explosionDirection: new Vector3(0, 1.2, 0),
+    position: new Vector3(0.1, 0.1, 0),
+    color: '#1a1a1a',
+  },
+  {
+    id: 'ram4',
+    name: 'DDR5-7200 RGB',
+    description: 'High-performance memory module with RGB lighting.',
+    specs: [
+      { label: 'Capacity', value: '32GB (2x16GB)' },
+      { label: 'Speed', value: '7200 MT/s' },
+      { label: 'Latency', value: 'CL34' },
+      { label: 'Voltage', value: '1.45V' },
+    ],
+    explosionDirection: new Vector3(0, 1.2, 0),
+    position: new Vector3(0.3, 0.1, 0),
+    color: '#1a1a1a',
+  },
+  {
+    id: 'cooling',
+    name: '360mm AIO Liquid Cooler',
+    description: 'Premium liquid cooling solution for maximum thermal performance.',
+    specs: [
+      { label: 'Radiator', value: '360mm' },
+      { label: 'Fans', value: '3x 120mm' },
+      { label: 'Pump Speed', value: '2800 RPM' },
+      { label: 'Noise Level', value: '< 20 dBA' },
+    ],
+    explosionDirection: new Vector3(0, 0, 2),
+    explosionRotation: new Vector3(0, 0, Math.PI * 2),
+    position: new Vector3(0, 0.5, 0),
+    color: '#151515',
+  },
+  {
+    id: 'motherboard',
+    name: 'Z790 ATX Motherboard',
+    description: 'High-end motherboard with advanced features and connectivity.',
+    specs: [
+      { label: 'Socket', value: 'LGA 1700' },
+      { label: 'Chipset', value: 'Intel Z790' },
+      { label: 'Memory', value: '4x DDR5' },
+      { label: 'PCIe', value: '5.0 x16' },
+      { label: 'M.2 Slots', value: '5x' },
+    ],
+    explosionDirection: new Vector3(0, 0, -0.8),
+    position: new Vector3(0, 0, -0.1),
+    color: '#0d0d0d',
+  },
+  {
+    id: 'ssd',
+    name: '2TB NVMe Gen4 SSD',
+    description: 'Ultra-fast storage for lightning-fast load times.',
+    specs: [
+      { label: 'Capacity', value: '2TB' },
+      { label: 'Read Speed', value: '7,000 MB/s' },
+      { label: 'Write Speed', value: '5,500 MB/s' },
+      { label: 'Interface', value: 'PCIe 4.0 x4' },
+    ],
+    explosionDirection: new Vector3(-1.5, 0.5, 0),
+    position: new Vector3(0.4, -0.1, 0),
+    color: '#1a1a1a',
+  },
+  {
+    id: 'psu',
+    name: '1000W 80+ Platinum PSU',
+    description: 'High-efficiency power supply with modular cables.',
+    specs: [
+      { label: 'Wattage', value: '1000W' },
+      { label: 'Efficiency', value: '94% (80+ Platinum)' },
+      { label: 'Modular', value: 'Fully Modular' },
+      { label: 'Fan', value: '135mm' },
+    ],
+    explosionDirection: new Vector3(0, -1.5, 0),
+    position: new Vector3(0, -0.6, 0),
+    color: '#1a1a1a',
+  },
+];
+
+export const getComponentById = (id: string): PCComponent | undefined => {
+  return pcComponentsData.find((component) => component.id === id);
+};
